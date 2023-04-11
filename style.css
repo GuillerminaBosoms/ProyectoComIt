@@ -1,0 +1,189 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #191919c0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #f0c94d;
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de reserva */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0ca4d2c;
+    border: 1px solid black;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #191919;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #f0c94d;
+    color: #191919;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f0c94d;
+    color: #191919;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.redes-sociales a {
+    color: #191919;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.redes-sociales a:hover {
+    color: #fff;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-top {
+    background-color: #191919;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scroll-top i {
+    font-size: 24px;
+}
+
+.scroll-top:hover {
+    background-color: #f0c94d;
+    color: #191919;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .contenedor-imagenes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contenedor-imagenes {
+      grid-template-columns: 1fr;
+    }
+  }
+  
